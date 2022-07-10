@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris</title>
+  <style>
+    body {
+      background-color: #081c2f;
+    }
+
+    .container {
+      display: flex;
+      margin: 20px auto;
+      padding: 10px;
+      border: 2px solid #ccc;
+      color: darkcyan;
+      width: 400px;
+    }
+
+    #canvas {
+      display: block;
+      border: 2px solid #ccc;
+    }
+
+    .lines {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0 10px;
+      border: 2px solid #ccc;
+      height: fit-content;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <canvas id="canvas" width="240" height="400"></canvas>
+    <div class="lines">
+      <div class="count">0</div>
+      <div>Lines</div>
+    </div>
+  </div>
+  <script src="tetris.js"></script>
+</body>
+
+</html>
